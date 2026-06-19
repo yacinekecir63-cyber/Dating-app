@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url("loveImg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+#asking{
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 30px;
+    color: rgb(255, 26, 26);
+    font-size: 40px;
+    font-family: Playfair Display , poppins ,Arial;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+#asking.fade-out{
+    opacity: 0;
+}
+.container{
+    text-align: center;
+    margin: 60px auto 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 450px;
+    min-width: 200px;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+.container.fade-out{
+    opacity: 0;
+}
+.container h1{
+    font-family: Playfair Display;
+    color: rgb(255, 0, 157);
+}
+.yesNoContainer{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.yesNoContainer button{
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Playfair Display;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.yesNoContainer button:hover{
+    transform: scale(1.2);
+}
+
+#yes{
+    background-color: rgb(255, 26, 26);
+    color: white;
+    transition: font-size 0.2s ease;
+}
+#yes:active{
+    background-color: rgb(255, 143, 143);
+}
+#no{
+    background-color: rgb(204, 204, 204);
+    transition: top 0.4s ease, left 0.4s ease;
+}
+#no:active{
+    background-color: rgb(241, 241, 241);
+}
+#foodTittle{
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 30px;
+    color: rgb(255, 26, 26);
+    font-size: 40px;
+    font-family: Playfair Display , poppins ,Arial;
+    display: none;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+#foodTittle.fade-out{
+    opacity: 0;
+}
+#foodContainer{
+    background-color: rgba(255, 26, 148, 0);
+    display: none;
+    grid-template-columns: repeat(2,1fr);
+    margin: 40px auto 0 auto;
+    gap: 20px;
+    row-gap: 20px;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 350px;
+    min-width: 200px;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+#foodContainer.fade-out{
+    opacity: 0;
+}
+.foods{
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 26, 26);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.1s ease, background-color 0.1s ease;
+}
+.foods:hover{
+    transform: scale(1.1);
+}
+.foods:active{
+    background-color:rgb(255, 26, 26) ;
+    color: white;
+}
+#timeAsking{
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 30px;
+    color: rgb(255, 26, 26);
+    font-size: 40px;
+    font-family: Playfair Display , poppins ,Arial;
+    transition: opacity 0.5s ease;
+    display: none;
+    opacity: 1;
+}
+#timeAsking.fade-out{
+    opacity: 0;
+}
+.timeContainer{
+    margin: 60px auto 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 450px;
+    min-width: 200px;
+    padding: 30px;
+    display: none;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+.timeContainer.fade-out{
+    opacity: 0;
+}
+.timeContainer label{
+    font-family: Playfair Display;
+    color:rgb(255, 26, 26) ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.timeContainer input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: pink;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.timeContainer input::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+#confirm{
+    display: block;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    background-color: white;
+    color: rgb(255, 26, 26);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: Plyafair Display;
+    font-weight:bold ;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.2s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+#confirm.fade-out{
+    opacity: 0;
+}
+#confirm:hover{
+    transform: scale(1.15);
+}
+#confirm:active{
+    background-color: rgb(255, 26, 26);
+    color: white;
+}
+#lasth1{
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 30px;
+    color: rgb(255, 26, 26);
+    font-size: 40px;
+    font-family: Playfair Display , poppins ,Arial;
+    display: none;
+}
+#seeyou{
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 30px;
+    color: rgb(255, 26, 26);
+    font-size: 30px;
+    font-family: Playfair Display , poppins ,Arial;
+    display: none;
+}
+#loveImg{
+    display: none;
+    margin: 20px auto 0 auto;
+    border-radius: 20px;
+    width: 40%;
+    max-width: 300px;
+    min-width: 190px;
+}
